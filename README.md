@@ -55,7 +55,7 @@ https://jitpack.io/#ShindouMihou/shieldbotlist/v1.0.2
   
 ### How to use:
 
-The API is easy to use, only requiring your client (event.getApi), your bot ID (can be found on discordapp.com/developers) and your authorization token (can be found on Edit Bot page on https://shieldbotlist.tk), for example:
+The API is easy to use, only requiring your client (event.getApi), your bot ID (can be found on https://discordapp.com/developers) and your authorization token (can be found on Edit Bot page on https://shieldbotlist.tk), for example:
 
 ```
 public void updateSBL(DiscordApi api, long token, String botId){
@@ -85,9 +85,8 @@ public class Values {
 public void updateSBL(DiscordApi api, long token, String botId){
 ShieldBotApi api = new ShieldBotApi.Builder().token(token).botId(botId).build();
 Values.setApi(api);
-/* You can also store this somewhere else, as long as updateSBL is being run on main().
- * Personally, I store this somewhere else, so I can cancel it whenever.
- **/
+
+/* You can also store this timer somewhere, or just directly use it. **/
 Timer timer = updateSbl(api);
 }
 
@@ -95,6 +94,7 @@ Timer timer = updateSbl(api);
 private static Timer updateSbl(DiscordApi bot) {
         Timer timer = new Timer();
         TimerTask task = new SBLTask(bot);
+	
 	// 60 * 15 is equal to 15 minutes.
         timer.schedule(task, 0, 1000 * 60 * 15);
         return timer;
