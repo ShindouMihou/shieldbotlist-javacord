@@ -65,7 +65,7 @@ api.setServerCount(api);
 ```
 You can also store the object into a values class like how I do, and use it on a Timer (please note, rate limit for the API is one every 30 seconds), here's an example of my method of using this. (I recommend you use your own methods though, test around and see what you like the most.)
 
-####Values.class:
+#### Values.class:
 ```
 public class Values {
     private static ShieldBotApi sbh = null;
@@ -80,7 +80,7 @@ public class Values {
     }
 ```
 
-####Main.class:
+#### Main.class:
 ```
 public void updateSBL(DiscordApi api, long token, String botId){
 ShieldBotApi api = new ShieldBotApi.Builder().token(token).botId(botId).build();
@@ -100,7 +100,7 @@ private static Timer updateSbl(DiscordApi bot) {
         return timer;
 }
 ```
-####SBLTask.class:
+#### SBLTask.class:
 ```
 public class SBLTask extends TimerTask{
     
@@ -119,5 +119,5 @@ public class SBLTask extends TimerTask{
 }
 ```
 
-###Java Documentations
+### Java Documentations
 For now, you can find the javadocs on my website (https://docs.paradoxium.tk).
