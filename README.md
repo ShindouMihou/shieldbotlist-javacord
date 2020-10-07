@@ -7,7 +7,7 @@ It will be maintained by me for the meantime, but I will be accepting pull reque
 ### How to install?
 
 Follow the instructions provided on:
-https://jitpack.io/#ShindouMihou/shieldbotlist/v1.0.2
+https://jitpack.io/#ShindouMihou/shieldbotlist-javacord/v1.0.2
 
 #### Maven
 
