@@ -58,7 +58,7 @@ https://jitpack.io/#ShindouMihou/shieldbotlist-javacord/v1.0.2
 The API is easy to use, only requiring your client (event.getApi), your bot ID (can be found on https://discordapp.com/developers) and your authorization token (can be found on Edit Bot page on https://shieldbotlist.tk), for example:
 
 ```
-public void updateSBL(DiscordApi api, long token, String botId){
+public void updateSBL(DiscordApi api, String token, long botId){
 ShieldBotApi api = new ShieldBotApi.Builder().token(token).botId(botId).build();
 api.setServerCount(api);
 }
