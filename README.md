@@ -2,7 +2,9 @@
 # Shield Bot List API (for Java)
 This is an unofficial API built for Java users, feel free to improve it as much as you like.
 It will be maintained by me for the meantime, but I will be accepting pull requests if ever there is a need for one.
-- This version is for Javacord, other versions will be added soon. (Discord4j and JDA).
+- This version is for Javacord, you can find the other versions below.
+- Discord4j: https://github.com/ShindouMihou/shieldbotlist-discord4j
+- JDA: https://github.com/ShindouMihou/shieldbotlist-jda
 
 ### How to install?
 
